@@ -1,0 +1,226 @@
+:root{
+  /* NEUTRAL */
+  --dark-blue:hsl(212, 21%, 14%);
+  --grayish-blue:hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  /* PRIMARY */
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+}
+
+body{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Fraunces', serif; */
+  background-color: var(--Cream);
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  width: 50%;
+  height: 65vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+
+.img{
+  width: 40%;
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img img{
+  width: 100%;
+  height: 427px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.visible{
+  display: none;
+}
+
+.container{
+  width: 40%;
+  height: 60vh;
+  background-color: var(--White);
+  padding: 20px 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.subtitle{
+  font-size: 1rem;
+  color: var(--grayish-blue);
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin: 5px 0px 5px 0px ;
+}
+
+  h1{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin: 10px 0px 15px 0px;
+  }
+
+  p{
+    font-size: 0.9rem;
+    word-spacing: 4px;
+    line-height: 22px;
+    color: var(--grayish-blue);
+  } 
+
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .price-small{
+    font-size: 1.4rem;
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+  }
+
+  .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    font-size: 0.7rem;
+    gap: 10px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+  }
+
+  @media (max-width: 375px){
+    main{
+      width: 90%;
+      padding: 30px 20px 0px 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      padding: calc(20px - 375px);
+    }
+    .img{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .img img{
+      width: 337px;
+      height: 220px;
+      margin-top: px;
+      margin: 0px 0px;
+      background-image: url(../images/image-product-mobile.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      border-radius:10px 10px 0px 0px ;
+    }
+  
+    .visible2{
+      display: none;
+    }
+  
+    .visible{
+      display: flex;
+    }
+  
+    .container{
+      width: 85%;
+      height: 88%;
+      margin: 0px 0px;
+      padding: 0px 25px;
+      background-color: var(--White);
+      border-radius: 0px 0px 10px 10px ;
+      margin-bottom: 30px;
+    }
+  
+    .subtitle{
+      font-family: 'Montserrat', sans-serif ;
+      font-size: 1.1rem;
+      font-weight: 200;
+      color: var(--grayish-blue);
+      letter-spacing: 3px;
+      margin-bottom: 0px;
+    }
+  
+    h1{
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      margin: 5px 0px 0px 0px;
+    }
+  
+    p{
+      font-size: 1rem;
+      color: var(--grayish-blue);
+      word-spacing: 3px;
+      line-height: 1.7em;
+      margin: 13px 0px 15px 0px;
+    }
+  
+    .price{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .price-small{
+      font-family: 'Fraunces', serif;
+      color: var(--Dark-cyan);
+      font-size: 2rem;
+      margin: 0px 0px 12px 0px;
+    }
+  
+    /* .rayita{
+      width: 80px;
+      height: 20px;
+      padding: 0px;
+      margin: 0 0 0 0 ;
+   border: 1px solid red;
+    }
+  
+    .raya{
+      width: 80px;
+      height: 2px;
+      background-color: var(--grayish-blue);
+    } */
+  
+  
+    .submit{
+      display: flex;
+      color: var(--White);
+      justify-content: center;
+      gap: 5px;
+      align-items: center;
+      background-color: var(--Dark-cyan);
+      margin-bottom: 30px;
+      border-radius: 12px;
+    }
+  
+    .submit img{
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      background-color: var(--Dark-cyan);
+    }
+  }
+
+
+
+
+/* .attribution {
+   font-size: 11px;
+    text-align: center; 
+  }
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+ } */
